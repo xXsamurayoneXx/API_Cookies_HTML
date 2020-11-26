@@ -1,14 +1,44 @@
-<body>
-    <h1>DRAG AND DROP HTML5</h1>
-    <div class="adder">
-      <input type="text" class="input" placeholder="Add items in your list"/>
-      <span class="add">+</span>
-    </div>
-    <ul>
-      <li class="draggable" draggable="true">JavaScript</li>
-      <li class="draggable" draggable="true">SCSS</li>
-      <li class="draggable" draggable="true">HTML5</li>
-      <li class="draggable" draggable="true">Awesome DnD</li>
-      <li class="draggable" draggable="true">Follow me</li>
-    </ul>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tarea 5</title>
+    <script type = "text/javascript">
+        <!--
+           function WriteCookie() {
+            if( document.myform.nombre.value == "" && document.myform.apellido.value == "") {
+                 alert("CAMPOS VACIOS, ingrese los datos");
+                 return;
+              }
+              if( document.myform.nombre.value == "" ) {
+                 alert("Ingrese Nombre");
+                 return;
+              }
+              if( document.myform.apellido.value == "" ) {
+                 alert("Ingrese Apellido");
+                 return;
+              }
+              cookievalue = escape(document.myform.nombre.value) + ";";
+              cookievalue2 = escape(document.myform.apellido.value) + ";";
+              document.cookie = "name=" + cookievalue;
+              document.write ("Configurando Cookies : " + "name=" + cookievalue + " lastname=" + cookievalue2);
+           }
+        //-->
+     </script>      
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=QUITE_LA_KEY_POR_SEGURIDAD_EN_GIT&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    
+    <link rel="stylesheet" type="text/css" href="C:\Users\Tsuka_000\Documents\encrip\5 Semestre\Lenguajes modernos de programacion\Tarea 5\estilo.css" />
+    <script src="C:\Users\Tsuka_000\Documents\encrip\5 Semestre\Lenguajes modernos de programacion\Tarea 5\funciones.js"></script>
+  </head>
+  <body>
+    <form name = "myform" action = "">
+        Nombre: <input type = "text" name = "nombre"/>
+        <p>Apellido: <input type = "text" name = "apellido"/></p>
+        <input type = "button" value = "Guardar Cookie" onclick = "WriteCookie();"/>
+     </form>   
+    <div id="map"></div>
   </body>
+</html>
